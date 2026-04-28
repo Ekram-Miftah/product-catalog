@@ -1,9 +1,10 @@
 {
   "name": "product-catalog",
+  "type": "module",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node src/index.ts",
+    "dev": "nodemon --exec node --loader ts-node/esm src/index.ts",
     "start": "node dist/index.js"
   },
   "keywords": [],
